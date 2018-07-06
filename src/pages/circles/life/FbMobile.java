@@ -42,7 +42,7 @@ public class FbMobile {
   @Test
   public void loginMobile() throws Exception {	  
 	//Get data from excel
-		 ExcelData data = new ExcelData("D:\\Circles\\DataSheet\\ExcelData.xlsx");
+		 ExcelData data = new ExcelData("\\Circles\\DataSheet\\ExcelData.xlsx");
 		 String usrname = data.getCellData("Facebook", "UserName", 2);	
 		 String pass = data.getCellData("Facebook", "Password", 2);	
 		
@@ -54,7 +54,7 @@ public class FbMobile {
   @Test
   public void verifyComment() throws Exception {	  
 	//Get data from excel
-		 ExcelData data = new ExcelData("D:\\Circles\\DataSheet\\ExcelData.xlsx");
+		 ExcelData data = new ExcelData("\\Circles\\DataSheet\\ExcelData.xlsx");
 		 String comment = data.getCellData("Facebook", "Comment", 2);	
 		 log.debug("Verify posted comment");	 
 	  UserProfilePage up1 = new UserProfilePage(driver);

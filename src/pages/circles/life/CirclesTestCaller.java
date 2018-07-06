@@ -31,7 +31,7 @@ public class CirclesTestCaller {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
 		
-		System.setProperty("webdriver.chrome.driver","D:\\Circles\\BrowserDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","\\Circles\\BrowserDrivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();		
@@ -45,7 +45,7 @@ public class CirclesTestCaller {
  @Test
   public void login() throws Exception{
 	 //Get data from excel
-	 ExcelData data = new ExcelData("D:\\Circles\\DataSheet\\ExcelData.xlsx");
+	 ExcelData data = new ExcelData("\\Circles\\DataSheet\\ExcelData.xlsx");
 	 String usrname = data.getCellData("Circles", "UserName", 2);	
 	 String pass = data.getCellData("Circles", "Password", 2);	
 	 
