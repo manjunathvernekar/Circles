@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="circles test suite" parallel="false" thread-count="2">
+  <test name="Circles Test">
+    <classes>
+      <class name="pages.circles.life.CirclesTestCaller"/>
+    </classes>
+  </test>
+  <test name="FB">
+    <classes>
+      <class name="pages.circles.life.FbWebTest"/>
+      <class name="pages.circles.life.FbMobile"/>
+    </classes>
+  </test>
+</suite>

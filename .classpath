@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="jarFiles/byte-buddy-1.7.5.jar"/>
+	<classpathentry kind="lib" path="jarFiles/client-combined-3.7.1-sources.jar"/>
+	<classpathentry kind="lib" path="jarFiles/client-combined-3.7.1.jar"/>
+	<classpathentry kind="lib" path="jarFiles/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="jarFiles/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="jarFiles/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="jarFiles/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="jarFiles/guava-23.0.jar"/>
+	<classpathentry kind="lib" path="jarFiles/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="jarFiles/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="jarFiles/java-client-5.0.4.jar"/>
+	<classpathentry kind="lib" path="jarFiles/selenium-server-standalone-3.7.1.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/poi-3.17-beta1.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/poi-examples-3.17-beta1.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/poi-excelant-3.17-beta1.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/poi-ooxml-3.17-beta1.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/poi-ooxml-schemas-3.17-beta1.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/poi-scratchpad-3.17-beta1.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/xmlbeans-xpath-2.6.0.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/ooxml-lib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="jarFiles/Poi/ooxml-lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
