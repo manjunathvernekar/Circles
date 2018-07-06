@@ -1,0 +1,62 @@
+17:29:48,087 DEBUG org.apache.http.client.protocol.RequestAddCookies<strong>{1}</strong>:123 - CookieSpec selected: default
+17:29:48,097 DEBUG org.apache.http.client.protocol.RequestAuthCache<strong>{1}</strong>:77 - Auth cache not set in the context
+17:29:48,098 DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager<strong>{1}</strong>:255 - Connection request: [route: {}->http://127.0.0.1:4723][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+17:29:48,109 DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager<strong>{1}</strong>:288 - Connection leased: [id: 0][route: {}->http://127.0.0.1:4723][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+17:29:48,110 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:235 - Opening connection {}->http://127.0.0.1:4723
+17:29:48,111 DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator<strong>{1}</strong>:139 - Connecting to /127.0.0.1:4723
+17:29:48,113 DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator<strong>{1}</strong>:146 - Connection established 127.0.0.1:63989<->127.0.0.1:4723
+17:29:48,113 DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection<strong>{1}</strong>:88 - http-outgoing-0: set socket timeout to 10800000
+17:29:48,113 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:256 - Executing request POST /wd/hub/session HTTP/1.1
+17:29:48,113 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:261 - Target auth state: UNCHALLENGED
+17:29:48,114 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:267 - Proxy auth state: UNCHALLENGED
+17:29:48,115 DEBUG org.apache.http.headers<strong>{1}</strong>:133 - http-outgoing-0 >> POST /wd/hub/session HTTP/1.1
+17:29:48,115 DEBUG org.apache.http.headers<strong>{1}</strong>:136 - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+17:29:48,115 DEBUG org.apache.http.headers<strong>{1}</strong>:136 - http-outgoing-0 >> Content-Length: 560
+17:29:48,115 DEBUG org.apache.http.headers<strong>{1}</strong>:136 - http-outgoing-0 >> Host: 127.0.0.1:4723
+17:29:48,115 DEBUG org.apache.http.headers<strong>{1}</strong>:136 - http-outgoing-0 >> Connection: Keep-Alive
+17:29:48,117 DEBUG org.apache.http.headers<strong>{1}</strong>:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_141)
+17:29:48,117 DEBUG org.apache.http.headers<strong>{1}</strong>:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+17:29:48,117 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "POST /wd/hub/session HTTP/1.1[\r][\n]"
+17:29:48,118 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+17:29:48,118 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "Content-Length: 560[\r][\n]"
+17:29:48,118 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "Host: 127.0.0.1:4723[\r][\n]"
+17:29:48,118 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+17:29:48,118 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_141)[\r][\n]"
+17:29:48,118 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+17:29:48,118 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "[\r][\n]"
+17:29:48,119 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "{[\n]"
+17:29:48,119 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "  "desiredCapabilities": {"app":"D:\\FB.apk","appPackage":"com.facebook.katana","appWaitActivity":"com.facebook.nodex.startup.splashscreen.NodexSplashActivity","avd":"Nexus_5X","deviceName":"Android emulator","platformName":"Android"},[\n]"
+17:29:48,119 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "  "capabilities": {[\n]"
+17:29:48,119 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "    "desiredCapabilities": {"app":"D:\\FB.apk","appPackage":"com.facebook.katana","appWaitActivity":"com.facebook.nodex.startup.splashscreen.NodexSplashActivity","avd":"Nexus_5X","deviceName":"Android emulator","platformName":"Android"},[\n]"
+17:29:48,119 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "    "firstMatch": [[\n]"
+17:29:48,119 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "      {"platformName":"android"}[\n]"
+17:29:48,119 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "    ][\n]"
+17:29:48,120 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 >> "  }[\n]"
+17:29:48,120 DEBUG org.apache.http.wire<strong>{1}</strong>:87 - http-outgoing-0 >> "}"
+17:29:59,470 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+17:29:59,471 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "X-Powered-By: Express[\r][\n]"
+17:29:59,471 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+17:29:59,471 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "Access-Control-Allow-Methods: GET,POST,PUT,OPTIONS,DELETE[\r][\n]"
+17:29:59,471 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "Access-Control-Allow-Headers: origin, content-type, accept[\r][\n]"
+17:29:59,471 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "Vary: X-HTTP-Method-Override[\r][\n]"
+17:29:59,471 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+17:29:59,471 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "Content-Length: 299[\r][\n]"
+17:29:59,472 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "ETag: W/"12b-OH2JPtzf16TIghSaySZSffRkitc"[\r][\n]"
+17:29:59,472 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "Date: Fri, 06 Jul 2018 11:59:59 GMT[\r][\n]"
+17:29:59,472 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+17:29:59,472 DEBUG org.apache.http.wire<strong>{1}</strong>:73 - http-outgoing-0 << "[\r][\n]"
+17:29:59,472 DEBUG org.apache.http.wire<strong>{1}</strong>:87 - http-outgoing-0 << "{"status":13,"value":{"message":"An unknown server-side error occurred while processing the command. Original error: Error occured while starting App. Original error: Activity used to start app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity"},"sessionId":null}"
+17:29:59,474 DEBUG org.apache.http.headers<strong>{1}</strong>:122 - http-outgoing-0 << HTTP/1.1 500 Internal Server Error
+17:29:59,474 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << X-Powered-By: Express
+17:29:59,474 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+17:29:59,474 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << Access-Control-Allow-Methods: GET,POST,PUT,OPTIONS,DELETE
+17:29:59,474 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << Access-Control-Allow-Headers: origin, content-type, accept
+17:29:59,474 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << Vary: X-HTTP-Method-Override
+17:29:59,475 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+17:29:59,475 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << Content-Length: 299
+17:29:59,475 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << ETag: W/"12b-OH2JPtzf16TIghSaySZSffRkitc"
+17:29:59,475 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << Date: Fri, 06 Jul 2018 11:59:59 GMT
+17:29:59,475 DEBUG org.apache.http.headers<strong>{1}</strong>:125 - http-outgoing-0 << Connection: keep-alive
+17:29:59,478 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:285 - Connection can be kept alive indefinitely
+17:29:59,481 DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager<strong>{1}</strong>:320 - Connection [id: 0][route: {}->http://127.0.0.1:4723] can be kept alive indefinitely
+17:29:59,481 DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager<strong>{1}</strong>:326 - Connection released: [id: 0][route: {}->http://127.0.0.1:4723][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]

@@ -33,7 +33,7 @@ public class FbMobile {
 		  cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.facebook.katana");	
 		  cap.setCapability(MobileCapabilityType.APP, "D:\\FB.apk");
 		  cap.setCapability(AndroidMobileCapabilityType.AVD, "Nexus_5X");
-		  cap.setCapability("appWaitActivity", "com.facebook.katana.LoginActivity");		  
+		  cap.setCapability("appWaitActivity", "com.facebook.nodex.startup.splashscreen.NodexSplashActivity");		  
 		  cap.setCapability("deviceName", "Android emulator");
 		
 		  driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
@@ -51,7 +51,7 @@ public class FbMobile {
 	  fm1.login(usrname, pass);
   }
   
-  @Test
+  @Test(dependsOnMethods = { "loginMobile" })
   public void verifyComment() throws Exception {	  
 	//Get data from excel
 		 ExcelData data = new ExcelData("\\Circles\\DataSheet\\ExcelData.xlsx");
