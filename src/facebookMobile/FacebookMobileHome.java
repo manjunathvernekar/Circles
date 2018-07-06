@@ -20,7 +20,7 @@ Logger log = Logger.getLogger("devpinoyLogger");
 	@AndroidFindBy(xpath="//android.widget.EditText[@text='Email or Phone']")
 	public WebElement userMobileEmail;
 	
-	@FindBy(xpath="//android.widget.EditText[@index='2']")
+	@FindBy(xpath="//android.widget.EditText[@text='Password']")
 	public WebElement userMobilePassword;
 	
 	@FindBy(xpath="//android.widget.Button[@text='LOG IN']")

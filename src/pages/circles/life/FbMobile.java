@@ -30,12 +30,13 @@ public class FbMobile {
 	  public void Setup() throws MalformedURLException{
 		  DesiredCapabilities cap = new DesiredCapabilities();
 		  cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		  cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.facebook.katana");	
-		  cap.setCapability(MobileCapabilityType.APP, "D:\\FB.apk");
-		  cap.setCapability(AndroidMobileCapabilityType.AVD, "Nexus_5X");
-		 cap.setCapability("appWaitActivity", "com.facebook.katana.FacebookLoginActivity");	
+		 cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.facebook.katana");	
+		 cap.setCapability(MobileCapabilityType.APP, "D:\\FB.apk");
+		  cap.setCapability(AndroidMobileCapabilityType.AVD, "Nexus");
+		cap.setCapability("appWaitActivity", "com.facebook.katana.LoginActivity");	
 		  cap.setCapability("deviceName", "Android emulator");
-		
+		  
+	
 		  driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 	  }
 	  	

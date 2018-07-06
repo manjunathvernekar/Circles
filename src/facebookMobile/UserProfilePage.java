@@ -18,7 +18,7 @@ public class UserProfilePage {
 WebDriver driver;
 Logger log = Logger.getLogger("devpinoyLogger");
 
-	@AndroidFindBy(xpath="//android.view.View[@resource-id='com.facebook.katana:id/feed_story_message' and @index='5']")
+	@AndroidFindBy(xpath="//android.view.ViewGroup[@resource-id='com.facebook.katana:id/feed_story_message' and @index='6']")
 	public WebElement postedMessage;
 	
 public String message;
