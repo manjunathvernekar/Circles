@@ -31,9 +31,9 @@ public class FbMobile {
 		  DesiredCapabilities cap = new DesiredCapabilities();
 		  cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		 cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.facebook.katana");	
-		 cap.setCapability(MobileCapabilityType.APP, "D:\\FB.apk");
+		 cap.setCapability(MobileCapabilityType.APP, "D:\\FBN.apk");
 		  cap.setCapability(AndroidMobileCapabilityType.AVD, "Nexus");
-		cap.setCapability("appWaitActivity", "com.facebook.katana.LoginActivity");	
+		cap.setCapability("appActivity", "com.facebook.katana.dbl.activity.*");	
 		  cap.setCapability("deviceName", "Android emulator");
 		  
 	
@@ -41,7 +41,7 @@ public class FbMobile {
 	  }
 	  	
   @Test
-  public void loginMobile() throws Exception {	  
+  public void loginMobile() throws Exception  {	  
 	//Get data from excel
 		 ExcelData data = new ExcelData("\\Circles\\DataSheet\\ExcelData.xlsx");
 		 String usrname = data.getCellData("Facebook", "UserName", 2);	
@@ -64,7 +64,7 @@ public class FbMobile {
   
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	 
   }
 
 }

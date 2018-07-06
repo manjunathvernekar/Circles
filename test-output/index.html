@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Manjunath\AppData\Local\Temp\testng-eclipse-2026012957\testng-customsuite.xml</span>
+                    <span>C:\Users\Manjunath\AppData\Local\Temp\testng-eclipse-259730850\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -133,27 +133,11 @@
                   <a name="loginMobile">
                   </a> <!-- loginMobile -->
                   <span class="method-name">loginMobile</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error occured while starting App. Original error: Error executing adbExec. Original error: &apos;Command &apos;C\:\\Users\\Manjunath\\AppData\\Local\\Android\\sdk\\platform-tools\\adb.exe -P 5037 -s H7AZCY0236333KM shell am start -W -n com.facebook.katana/com.facebook.katana.dbl.activity.FacebookLoginActivity -S&apos; exited with code 4294967295&apos;; Stderr: &apos;Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.facebook.katana/.dbl.activity.FacebookLoginActivity } from null (pid=19314, uid=2000) not exported from uid 10069
-
-java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.facebook.katana/.dbl.activity.FacebookLoginActivity } from null (pid=19314, uid=2000) not exported from uid 10069
-	at com.android.server.am.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1638)
-	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:457)
-	at com.android.server.am.ActivityStarter.startActivityLocked(ActivityStarter.java:298)
-	at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:986)
-	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:4785)
-	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:405)
-	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:141)
-	at android.os.ShellCommand.exec(ShellCommand.java:96)
-	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:15247)
-	at android.os.Binder.shellCommand(Binder.java:573)
-	at android.os.Binder.onTransact(Binder.java:473)
-	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4290)
-	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3056)
-	at android.os.Binder.execTransact(Binder.java:674)&apos;; Code: &apos;4294967295&apos; (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 21.26 seconds
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error occured while starting App. Original error: Activity used to start app doesn&apos;t exist or cannot be launched! Make sure it exists and is a launchable activity (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7.43 seconds
 Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
 System info: host: &apos;MANJUNATH-PC&apos;, ip: &apos;172.16.69.7&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_141&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: driver.version: AndroidDriver
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -175,11 +159,18 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
-	at pages.circles.life.FbMobile.Setup(FbMobile.java:50)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:83)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:93)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:72)
+	at pages.circles.life.FbMobile.Setup(FbMobile.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -214,7 +205,7 @@ Driver info: driver.version: RemoteWebDriver
                   <a name="verifyComment">
                   </a> <!-- verifyComment -->
                   <span class="method-name">verifyComment</span>
-                  <div class="stack-trace">java.lang.Throwable: Method FbMobile.verifyComment()[pri:0, instance:pages.circles.life.FbMobile@2d928643] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method FbMobile.verifyComment()[pri:0, instance:pages.circles.life.FbMobile@5ae63ade] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
@@ -242,7 +233,7 @@ Driver info: driver.version: RemoteWebDriver
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Manjunath\AppData\Local\Temp\testng-eclipse-2026012957\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Manjunath\AppData\Local\Temp\testng-eclipse-259730850\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>

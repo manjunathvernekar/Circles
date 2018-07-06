@@ -3,10 +3,13 @@ package facebookMobile;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -20,7 +23,7 @@ Logger log = Logger.getLogger("devpinoyLogger");
 	@AndroidFindBy(xpath="//android.widget.EditText[@text='Email or Phone']")
 	public WebElement userMobileEmail;
 	
-	@FindBy(xpath="//android.widget.EditText[@text='Password']")
+	@FindBy(xpath="//android.widget.EditText[@index='0']")
 	public WebElement userMobilePassword;
 	
 	@FindBy(xpath="//android.widget.Button[@text='LOG IN']")
@@ -37,6 +40,8 @@ Logger log = Logger.getLogger("devpinoyLogger");
 public void login(String userName, String password) 
 {
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	WebDriverWait wait=new WebDriverWait(driver, 50);
+	userMobileEmail = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.EditText[@text='Email or Phone']")));
 	log.debug("Enter user name");
 	userMobileEmail.sendKeys(userName);
 	log.debug("Enter password");
