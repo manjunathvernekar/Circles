@@ -21,8 +21,8 @@ public class UserProfilePage {
 WebDriver driver;
 Logger log = Logger.getLogger("devpinoyLogger");
 
-	@AndroidFindBy(xpath="//android.view.ViewGroup[[contains(@resource-id,'feed_story_message') and @index='5']")
-	
+	//@AndroidFindBy(xpath="//android.view.ViewGroup[[contains(@resource-id,'feed_story_message') and @index='5']")
+	@AndroidFindBy(xpath="//android.view.ViewGroup[@index='5']")
 	public WebElement postedMessage;
 	
 public String message;
@@ -36,8 +36,8 @@ public String message;
 public void verifyPost(String posttext) 
 {
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	WebDriverWait wait=new WebDriverWait(driver, 150);
-	postedMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.view.ViewGroup[[contains(@resource-id,'feed_story_message') and @index='5']")));
+	//WebDriverWait wait=new WebDriverWait(driver, 20);
+	//postedMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.view.ViewGroup[[contains(@resource-id,'feed_story_message') and @index='5']")));
 	message = postedMessage.getAttribute("content-desc").toString();
 	log.debug("Verifu the message posted");
 	assertEquals(message, posttext, "comment not posted");
