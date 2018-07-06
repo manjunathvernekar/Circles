@@ -31,9 +31,9 @@ public class FbMobile {
 		  DesiredCapabilities cap = new DesiredCapabilities();
 		  cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		 cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.facebook.katana");	
-		 cap.setCapability(MobileCapabilityType.APP, "D:\\FBN.apk");
+		 cap.setCapability(MobileCapabilityType.APP, "D:\\FB.apk");
 		  cap.setCapability(AndroidMobileCapabilityType.AVD, "Nexus");
-		cap.setCapability("appActivity", "com.facebook.katana.dbl.activity.*");	
+		cap.setCapability("appActivity", "com.facebook.katana.LoginActivity");	
 		  cap.setCapability("deviceName", "Android emulator");
 		  
 	
