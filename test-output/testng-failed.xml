@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [circles test suite]">
+  <test name="Circles Test(failed)">
     <classes>
-      <class name="pages.circles.life.FbMobile">
+      <class name="pages.circles.life.CirclesTestCaller">
         <methods>
           <include name="afterClass"/>
-          <include name="verifyComment"/>
+          <include name="verifyEmail"/>
+          <include name="login"/>
           <include name="Setup"/>
-          <include name="loginMobile"/>
         </methods>
-      </class> <!-- pages.circles.life.FbMobile -->
+      </class> <!-- pages.circles.life.CirclesTestCaller -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Circles Test(failed) -->
+  <test name="FB(failed)">
+    <classes>
+      <class name="pages.circles.life.FbWebTest">
+        <methods>
+          <include name="login"/>
+          <include name="Setup"/>
+          <include name="afterClass"/>
+          <include name="postComment"/>
+        </methods>
+      </class> <!-- pages.circles.life.FbWebTest -->
+    </classes>
+  </test> <!-- FB(failed) -->
+</suite> <!-- Failed suite [circles test suite] -->

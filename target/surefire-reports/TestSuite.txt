@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 23.45 s <<< FAILURE! - in TestSuite
+login(pages.circles.life.CirclesTestCaller)  Time elapsed: 0.017 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/poi/xssf/usermodel/XSSFWorkbook
+	at pages.circles.life.CirclesTestCaller.login(CirclesTestCaller.java:48)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFWorkbook
+	at pages.circles.life.CirclesTestCaller.login(CirclesTestCaller.java:48)
+
+login(pages.circles.life.FbWebTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/apache/poi/xssf/usermodel/XSSFWorkbook
+	at pages.circles.life.FbWebTest.login(FbWebTest.java:45)
+

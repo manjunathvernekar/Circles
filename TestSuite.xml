@@ -9,7 +9,7 @@
   <test name="FB">
     <classes>
       <class name="pages.circles.life.FbWebTest"/>
-      <class name="pages.circles.life.FbMobile"/>
+    
     </classes>
   </test>
 </suite>
